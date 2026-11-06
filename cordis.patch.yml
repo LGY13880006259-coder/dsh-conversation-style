@@ -1,0 +1,5 @@
+# Inserts the conversation-style Host row; the browser half is declared by
+# `dsh.client` in package.json (platform: web).
+- insert:
+    - id: conversation-style
+      name: 'dsh-conversation-style'
