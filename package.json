@@ -1,0 +1,53 @@
+{
+  "name": "dsh-conversation-style",
+  "version": "1.0.0",
+  "description": "Adds a left-sidebar switch that changes the assistant's conversation style between entertainment and professional.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "conversation-style",
+    "persona",
+    "tone",
+    "system-prompt",
+    "sidebar"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1",
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGY13880006259-coder/dsh-conversation-style.git"
+  },
+  "homepage": "https://github.com/LGY13880006259-coder/dsh-conversation-style#readme",
+  "bugs": {
+    "url": "https://github.com/LGY13880006259-coder/dsh-conversation-style/issues"
+  }
+}
